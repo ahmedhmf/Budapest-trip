@@ -1,87 +1,106 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Budapest Family Itinerary</title>
   <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log("Service Worker Registered"));
     }
   </script>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; background-color: #f5f5f5; }
-    h1 { text-align: center; color: #2c3e50; }
-    .day { margin-bottom: 2rem; background: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    h2 { color: #2e86de; margin-top: 0; }
-    p { line-height: 1.6; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    img { width: 100%; border-radius: 10px; margin-top: 1rem; }
-    .section { margin-bottom: 1rem; }
-  </style>
 </head>
 <body>
-  <h1>Budapest Family Trip Itinerary<br><small>April 19–23, 2025</small></h1>
+  <main class="container">
+    <h1>Budapest Family Trip Itinerary<br><small>April 19–23, 2025</small></h1>
+    <article>
+      <header><h2>Saturday, April 19</h2></header>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>14:00–15:30: Hotel Check-in</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Mercure+Budapest+Castle+Hill/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>16:00–19:30: Optional walk near Clark Ádám tér</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Clark+Ádám+tér/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>19:30–21:00: Dinner at VakVarjú Restaurant</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Clark+Ádám+tér/">Location</a></p>
+      </details>
+    </article>
+    
+    <article>
+      <header><h2>Sunday, April 20</h2></header>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>08:00–09:00: Breakfast</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Mercure+Budapest+Castle+Hill/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>09:30–12:00: Castle Hill / Buda Castle</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Buda+Castle/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>12:15–13:30: Lunch at Jamie’s Italian / Baltazár Grill</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Clark+Ádám+tér/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>14:30–18:00: Zoo</strong></summary>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>18:30–19:30: Dinner at Paprika Vendéglő</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Paprika+Vendéglő/">Location</a></p>
+      </details>
+    </article>
 
-  <div class="day">
-    <h2>Saturday, April 19</h2>
-    <div class="section"><strong>14:00–15:30:</strong> Arrival & Hotel Check-in – 
-      <a href="https://www.google.com/maps/place/Mercure+Budapest+Castle+Hill/">Mercure Budapest Castle Hill</a></div>
-    <div class="section"><strong>16:00–17:30:</strong> Optional walk near <a href="https://www.google.com/maps/place/Clark+Ádám+tér/">Clark Ádám tér</a></div>
-    <div class="section"><strong>18:00–19:00:</strong> Danube River Cruise</div>
-    <div class="section"><strong>19:30–21:00:</strong> Dinner at 
-      <a href="https://www.google.com/maps/place/VakVarju+Restaurant+-+Pest/">VakVarjú Restaurant</a></div>
-  </div>
+    <article>
+      <header><h2>Monday, April 21</h2></header>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>08:00–09:00: Breakfast</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Mercure+Budapest+Castle+Hill/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>09:30–11:00: Parliament Tour</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Buda+Castle/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>11:15–12:00: Shoes on the Danube Memorial</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Clark+Ádám+tér/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>12:30–14:00: Lunch at Spoon the Boat Restaurant</strong></summary>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>14:30–17:00: Margaret Island</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Paprika+Vendéglő/">Location</a></p>
+      </details>
+    </article>
 
-  <div class="day">
-    <h2>Sunday, April 20</h2>
-    <div class="section"><strong>08:00–09:00:</strong> Breakfast at hotel</div>
-    <div class="section"><strong>09:30–12:00:</strong> Castle Hill – 
-      <a href="https://www.google.com/maps/place/Buda+Castle/">Buda Castle</a>, 
-      <a href="https://www.google.com/maps/place/Matthias+Church/">Matthias Church</a></div>
-    <div class="section"><strong>12:15–13:30:</strong> Lunch at Jamie’s Italian / Baltazár Grill</div>
-    <div class="section"><strong>14:30–18:00:</strong> City Park – Zoo, Vajdahunyad Castle, Széchenyi Baths
-      <br><a href="https://www.google.com/maps/place/Budapest+Zoo/">Budapest Zoo</a>, 
-      <a href="https://www.google.com/maps/place/Vajdahunyad+Castle/">Castle</a></div>
-    <div class="section"><strong>18:30–19:30:</strong> Dinner at 
-      <a href="https://www.google.com/maps/place/Paprika+Vendéglő/">Paprika Vendéglő</a></div>
-  </div>
-
-  <div class="day">
-    <h2>Monday, April 21</h2>
-    <div class="section"><strong>08:00–09:00:</strong> Breakfast at hotel</div>
-    <div class="section"><strong>09:30–11:00:</strong> Parliament Tour – 
-      <a href="https://www.google.com/maps/place/Hungarian+Parliament+Building/">Parliament</a></div>
-    <div class="section"><strong>11:15–12:00:</strong> Shoes on the Danube Memorial – 
-      <a href="https://www.google.com/maps/place/Shoes+on+the+Danube+Bank/">View Map</a></div>
-    <div class="section"><strong>12:30–14:00:</strong> Lunch at Spoon Boat Restaurant</div>
-    <div class="section"><strong>14:30–17:00:</strong> Margaret Island – 
-      <a href="https://www.google.com/maps/place/Margaret+Island/">Margaret Island</a></div>
-    <div class="section"><strong>17:30–18:30:</strong> Dinner at 
-      <a href="https://www.google.com/maps/place/Trófea+Grill+Restaurant/">Trófea Grill</a></div>
-  </div>
-
-  <div class="day">
-    <h2>Tuesday, April 22</h2>
-    <div class="section"><strong>08:00–09:00:</strong> Breakfast at hotel</div>
-    <div class="section"><strong>09:30–11:30:</strong> 
-      <a href="https://www.google.com/maps/place/IKONO+Budapest/">IKONO Immersive Art Experience</a></div>
-    <div class="section"><strong>11:30–16:30:</strong> Shopping on 
-      <a href="https://www.google.com/maps/place/Váci+Street/">Váci Street</a></div>
-    <div class="section"><strong>16:30–18:00:</strong> DinoLand Play Center – near Váci Street</div>
-    <div class="section"><strong>18:30–20:00:</strong> Dinner at 
-      <a href="https://www.google.com/maps/place/Hungarikum+Bisztro/">Hungarikum Bisztró</a></div>
-  </div>
-
-  <div class="day">
-    <h2>Wednesday, April 23</h2>
-    <div class="section"><strong>07:00–08:00:</strong> Breakfast & Check-out</div>
-    <div class="section"><strong>08:00–09:00:</strong> Transfer to 
-      <a href="https://www.google.com/maps/place/Budapest+Airport/">Budapest Airport</a></div>
-  </div>
+    <article>
+      <header><h2>Tuesday, April 23</h2></header>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>08:00–09:00: Breakfast</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Mercure+Budapest+Castle+Hill/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>09:30–11:30: IKONO Budapest</strong></summary>
+        <p><a href="https://www.google.com/maps/place/IKONO+Budapest/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>11:30–16:30: Shopping on Váci Street</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Váci+Street/">Location</a></p>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>16:30–18:00: DinoLand Play Center (indoor)</strong></summary>
+      </details>
+      <details name="example" style="width: 90%;">
+        <summary role="button" class="secondary"><strong>18:30–20:00: Hungarikum Bisztró</strong></summary>
+        <p><a href="https://www.google.com/maps/place/Hungarikum+Bisztro/">Location</a></p>
+      </details>
+    </article>
+  </main>
 </body>
 </html>
