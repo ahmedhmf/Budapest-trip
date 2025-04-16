@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest Family Itinerary</title>
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log("Service Worker Registered"));
+      }
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; background-color: #f9f9f9; }
+        h1 { text-align: center; color: #2c3e50; }
+        .day { margin-bottom: 2rem; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { color: #2980b9; margin-top: 0; }
+        p { line-height: 1.6; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; border-radius: 8px; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Budapest Family Trip Itinerary</h1>
+    <div class="day">
+        <h2>Saturday, April 19</h2>
+        <p><strong>14:00–15:30:</strong> <a href="https://goo.gl/maps/VB7CSEN5eeMevNYHA" target="_blank">Hotel Check-in</a></p>
+        <p><strong>Dinner:</strong> <a href="https://vakvarju.com/en/vakvarju-etterem-pest/" target="_blank">VakVarjú</a></p>
+    </div>
+    <div class="day">
+        <h2>Sunday, April 20</h2>
+        <p><strong>Morning:</strong> <a href="https://goo.gl/maps/RXYFQCMGnmStP7ph6" target="_blank">Castle Hill</a></p>
+        <p><strong>Dinner:</strong> <a href="https://paprikavendeglo.hu/" target="_blank">Paprika Vendéglő</a></p>
+    </div>
+    <div class="day">
+        <h2>Monday, April 21</h2>
+        <p><strong>Morning:</strong> <a href="https://goo.gl/maps/QAKBy9zkdKXK3PVXA" target="_blank">Parliament Tour</a></p>
+        <p><strong>Dinner:</strong> <a href="https://trofeagrill.com/en/margitkorut" target="_blank">Trófea Grill</a></p>
+    </div>
+    <div class="day">
+        <h2>Tuesday, April 22</h2>
+        <p><strong>Morning:</strong> <a href="https://goo.gl/maps/ivC4jCPuzDnpVBtH8" target="_blank">IKONO</a></p>
+        <p><strong>Dinner:</strong> <a href="https://hungarikumbisztro.hu/" target="_blank">Hungarikum Bisztró</a></p>
+    </div>
+    <div class="day">
+        <h2>Wednesday, April 23</h2>
+        <p><strong>Departure:</strong> <a href="https://goo.gl/maps/QjPP9M8EpbBAAtfd8" target="_blank">Budapest Airport</a></p>
+    </div>
+</body>
+</html>
